@@ -1,0 +1,64 @@
+<?php
+
+echo <<<EOF
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Health One Login Page </title>
+<link href="../css/loginStyle.css" rel="stylesheet">
+</head>
+<body>
+
+
+
+    <div class="login-page">
+
+
+    <div class="form">
+    <h2 class="logoText"> Welcome to ZiZho </h2> 
+    <h3 style="padding: 0px; margin: 0px;"> <i> "The quiz that wil connecting your interests and feelings" </i> </h3>
+    <hr>
+    <form class="login-form" method="POST">
+        <input type="text" placeholder="Email" name="email"/>
+        <input type="password" placeholder="Password" name="password"/>
+        <input type="submit" value="Login" name="loginSubmit">
+    
+        <!-- We gebruiken ParticlesJS dus gebruiken we hier InnerHTML voor in controller! -->
+      <div id="errorMsg"> 
+    
+      </div>
+    
+      </form>
+    </div>
+
+</body>
+</html>
+<style>
+body {
+
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  
+}
+
+  #errorMsg { 
+
+    color: red; 
+    border: 1px solid #FFF;
+    background-color: black;
+    text-transform: uppercase;
+
+  }
+
+
+
+</style>
+
+
+
+
+
+EOF;
+
+?>
